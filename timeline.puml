@@ -1,0 +1,56 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=3
+' 4：40 ~ 5：48
+
+@startuml
+actor       葫芦娃   as huluwa  #Red
+actor       蛇精    as snake  #Black
+entity      冰      as ice   #Blue
+actor       蝎子精    as scorpion   #Purple
+entity      长矛    as longSpear  #Purple
+actor       三只蝙蝠 as bats  #Blue
+entity      巨石  as bigRock #White
+
+bigRock -[#Green]> bigRock : 上升
+
+huluwa -[#Grey]> snake : 告诉
+note right
+    妖精，
+    快还我爷爷...
+end note
+
+snake -[#Grey]> huluwa : 告诉
+note left: 可以可以...
+
+huluwa -[#Grey]> snake : 告诉
+note right: 真不要脸
+
+scorpion -[#Blue]> scorpion : 大笑
+
+huluwa -[#Grey]> scorpion : 告诉
+note right: 今天要是...
+
+scorpion -[#Blue]> scorpion : 大笑
+
+scorpion -[#Red]> longSpear : 使用
+note right: 投掷
+
+longSpear -[#Red]> huluwa : 造成伤害
+note left: 掷向
+
+huluwa -[#Red]> longSpear : 损毁
+note right: 折断
+
+huluwa -[#Blue]> huluwa : 大笑
+
+snake -[#Red]> ice : 使用
+note right: 吹
+
+ice -[#Red]> huluwa : 造成伤害
+note left: 冰封
+
+bats -[#Blue]> bats : 大笑
+
+huluwa -[#Red]> ice : 损毁
+note right: 粉碎
+
+@enduml
